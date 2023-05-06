@@ -1,0 +1,92 @@
+.tech__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .tech__header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: larger;
+    color: #fff;
+    font-family: var(--font-family);
+    background: var(--color-footer);
+
+
+  }
+  
+  .tech__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech__header-content__input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .tech__header-content__input input[type="email"],
+  .tech__header-content__input input[type="password"] {
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #fff;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+  .tech__header-content__input button[type="button"] {
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .tech__header-content__input input[type="email"],
+    .tech__header-content__input input[type="password"],
+    .tech__header-content__input button[type="button"] {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 490px) {
+    .tech__header-content p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    .tech__header-content__input input[type="email"],
+    .tech__header-content__input input[type="password"],
+    .tech__header-content__input button[type="button"] {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  
